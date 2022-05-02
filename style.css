@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "sacramento";
+    src: url(./font/Sacramento.ttf);
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(./font/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: "pinyon";
+    src: url(./font/Pinyon.ttf);
+}
+
+@font-face {
+    font-family: "oswald";
+    src: url(./font/Oswald.ttf);
+}
+
+@font-face {
+    font-family: "yeseva";
+    src: url(./font/Yeseva.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.17) url('./img/background.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    font-family: yeseva;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoHeader {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgLogo {
+    width: 70%;
+}
+
+a.button {
+    display: block;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 12px 2px;
+    margin: 10px 5%;
+    background-color: rgba( 255, 255, 255, 0.35 );
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: oswald;
+}
+
+.contact {
+    background-color: rgba( 255, 255, 255, 0.35 );
+    padding: 10px 5px;
+    text-align: center;
+    margin: 0 5%;
+    border-radius: 5px;
+}
+
+.containerContact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerContact a {
+    width: 20%;
+    padding: 5px 0;
+    color: midnightblue;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.containerContact i {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+
+.conteudo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: whitesmoke;
+}
