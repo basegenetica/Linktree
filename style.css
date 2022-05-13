@@ -45,6 +45,27 @@ header {
     justify-content: center;
 }
 
+.buttonGroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.buttonGroup a.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    flex: 1 1 150px;
+    flex-direction: column;
+}
+a.button span {
+    font-size: 0.9rem;
+}
+
 .imgLogo {
     width: 70%;
 }
