@@ -41,14 +41,18 @@
     </div>
     <div class="conteudo">
         <h1>Catálogos CRV Lagoa</h1>
-        <a class="button" href="https://drive.google.com/file/d/1wkEnlOQjabJUnUjX9VacMugCAWvo6ihd/view?usp=sharing"
-            target="_blanck">Catálogo Corte Europeu 2022</a>
-        <a class="button" href="https://drive.google.com/file/d/1Ra9XcGMO5Eecsw_4slcf5M3MHpEh99wl/view?usp=sharing"
-            target="_blanck">Catálogo Corte Zebu 2022</a>
-        <a class="button" href="https://drive.google.com/file/d/14ioxo4gItx8C5RNpgfzIg5RKf6u8p9jx/view?usp=sharing"
-            target="_blanck">Catálogo Leite Europeu 2022</a>
-        <a class="button" href="https://drive.google.com/file/d/14JC4v6wGVeU76GHha2TrnrIbquw9V07s/view?usp=sharing"
-            target="_blanck">Catálogo Leite Zebu 2022</a>
+        <div class="buttonGroup">
+            <a class="button link" href="./catalogos/CORTE_EUROPEU.pdf" target="_blanck">Catálogo Corte Europeu
+                2022/23</a>
+            <a class="button link" href="./catalogos/CORTE ZEBU.pdf" target="_blanck">Catálogo Corte Zebu 2022</a>
+        </div>
+        <div class="buttonGroup">
+            <a class="button link" href="./catalogos/LEITE EUROPEU.pdf" target="_blanck">Catálogo Leite Europeu
+                2022</a>
+            <a class="button link" href="./catalogos/LEITE ZEBU.pdf" target="_blanck">Catálogo Leite Zebu
+                2021/22</a>
+
+        </div>
         <hr>
         <h1 style="margin: 0; padding: 0;">Fale conosco</h1>
         <a class="button" href="https://api.whatsapp.com/send?phone=5561996430233&text=ol%C3%A1!" target="_blanck">
@@ -67,5 +71,11 @@
             target="_blanck">Lidiane Barbosa <br>Departamento Financeiro</a>
     </div>
 </body>
+<script>
+    if (!navigator.plugins['PDF Viewer']) {
+        var link = document.getElementsByClassName('link')
+        link.setAttribute("download", "");
+    }
+</script>
 
 </html>
