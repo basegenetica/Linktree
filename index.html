@@ -42,31 +42,22 @@
     <div class="conteudo">
         <h1>Catálogos CRV Lagoa</h1>
         <div class="buttonGroup">
-            <a class="button link" href="./catalogos/CORTE_EUROPEU.pdf" target="_blanck">Catálogo Corte Europeu
-                2022/23</a>
-            <a class="button link" href="./catalogos/CORTE ZEBU.pdf" target="_blanck">Catálogo Corte Zebu 2022</a>
+            <a class="button link" href="./catalogos/corte-europeu.pdf" target="_blanck">Catálogo Corte Europeu
+                2023/24</a>
+            <a class="button link" href="./catalogos/corte-zebu.pdf" target="_blanck">Catálogo Corte Zebu 2023/24</a>
         </div>
         <div class="buttonGroup">
-            <a class="button link" href="./catalogos/LEITE EUROPEU.pdf" target="_blanck">Catálogo Leite Europeu
+            <a class="button link" href="./catalogos/leite-europeu.pdf" target="_blanck">Catálogo Leite Europeu
+                2024</a>
+            <a class="button link" href="./catalogos/leite-zebu.pdf" target="_blanck">Catálogo Leite Zebu
                 2023/24</a>
-            <a class="button link" href="./catalogos/LEITE ZEBU.pdf" target="_blanck">Catálogo Leite Zebu
-                2022/23</a>
 
         </div>
         <hr>
-        <h1 style="margin: 0; padding: 0;">Fale conosco</h1>
-        <a class="button" href="https://api.whatsapp.com/send?phone=5561996430233&text=ol%C3%A1!" target="_blanck">
-            Ricardo Bonato <br> Médico Veterinário - Proprietário</a>
-        <div class="buttonGroup">
-            <a class="button" href="https://api.whatsapp.com/send?phone=5561996401633&text=ol%C3%A1!"
-                target="_blanck">Lucas Borges <span>Supervisor de Vendas</span> </a>
-            <a class="button" href="https://api.whatsapp.com/send?phone=5561996401588&text=ol%C3%A1!"
-                target="_blanck">Natan Silva<span>Consultor Brasília - DF</span></a>
-            <a class="button" href="https://api.whatsapp.com/send?phone=5561996402557&text=ol%C3%A1!"
-                target="_blanck">Weslley Alves <span>Consultor Técnico</span></a>
-        </div>
-        <a class="button" href="https://api.whatsapp.com/send?phone=5561996402387&text=Ol%C3%A1!"
-            target="_blanck">Lidiane Barbosa <br>Departamento Financeiro</a>
+        <h1 style="margin: 0; padding: 0;">Fale conosco no WhatsApp</h1>
+        <a class="button" id="telefoneSelecionado" href="#" target="_blanck">Vendas</span> </a>
+        <a class="button" href="https://api.whatsapp.com/send?phone=5561996430233&text=ol%C3%A1!" target="_blanck">Serviços</a>
+        <a class="button" href="https://api.whatsapp.com/send?phone=5561996402387&text=Ol%C3%A1!" target="_blanck">Departamento Financeiro</a>
     </div>
 </body>
 <script>
@@ -74,6 +65,29 @@
         var link = document.getElementsByClassName('link')
         link.setAttribute("download", "");
     }
+</script>
+
+<script>
+    // Array para armazenar os números de telefone
+const telefones = [
+  '5561996401588',
+  '5561996401633',
+  '5561996402557',
+  '5561996355205'
+];
+
+// Função para selecionar um número aleatório do array
+function selecionarTelefoneAleatorio(arr) {
+  const indiceAleatorio = Math.floor(Math.random() * arr.length);
+  return arr[indiceAleatorio];
+}
+
+// Selecionando um número de telefone aleatório
+const telefoneSelecionado = selecionarTelefoneAleatorio(telefones);
+
+// Atualizando o link no HTML com o telefone selecionado
+const linkElement = document.getElementById('telefoneSelecionado');
+linkElement.href = `https://api.whatsapp.com/send?phone=${telefoneSelecionado}&text=ol%C3%A1!`;
 </script>
 
 </html>
